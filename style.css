@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+     scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary: white;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: #f90404;
+	background: linear-gradient(90deg, #18bb26 18%, rgb(0, 239, 200) 73%);
+     position: sticky;
+     top: 0;
+}	
+.container{
+	width: 1100px;
+	margin: auto;
+} 
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-center{
+	align-items: center;
+}
+.logo{
+	flex-basis: 30%;
+}
+nav{
+	flex-basis: 70%;
+}
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+header nav a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 12px;
+	display: block;
+}
+
+header nav a:hover{
+	color: var(--primary);
+}
+header .logo a{
+	font-family: 'Redressed', cursive;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+
+.banner-section{
+	background: rgb(149, 235, 10);
+background: linear-gradient(90deg, rgba(246,228,250,0.6169818269104517) 18%, rgba(194,247,245,0.8718837876947654) 63%);
+    padding: 50px;
+}
+
+.banner-section img{
+	max-width: 70%;
+	object-fit: cover;
+	border-radius: 13px;
+	margin: auto;
+	display: block;
+}
+
+.banner-section .container img{
+	height: 400px;
+	width: 100%;
+}
+
+.shoot{
+	width: auto;
+	position: fixed;
+	top: 67%;
+	left: 17%;
+	animation-name: shape1;
+	animation-duration: 10s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes shoot{
+
+	from{
+		transform: rotate(0) translate(0, 0);
+	}
+	to{
+		transform: rotate(170deg) translate(30px, 10px);
+	}
+}
+
+.shoot1{
+	width: auto;
+	position: fixed;
+	right: 7%;
+	top: 26%;
+	animation-name: shape2;
+	animation-duration: 10s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes shoot1{
+
+     from{
+     	transform: scale(1) rotate(0deg);
+     }
+     to{
+     	transform: scale(1.5) rotate(160deg);
+     }
+}
+
+.shoot2{
+	width: auto;
+	position: fixed;
+	right: 5%;
+	bottom: 20%;
+	animation-name: shape2;
+	animation-duration: 10s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes shoot2{
+
+     from{
+     	transform: scale(1) rotate(0deg);
+     }
+     to{
+     	transform: scale(1.5) rotate(160deg);
+     }
+}
+
+.shoot3{
+	width: auto;
+	position: fixed;
+	top: 22%;
+	left: 20%;
+	animation-name: shape1;
+	animation-duration: 10s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes shoot3{
+
+	from{
+		transform: rotate(0) translate(0, 0);
+	}
+	to{
+		transform: rotate(170deg) translate(30px, 10px);
+	}
+}
+
+
+.feature-section{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.feature{
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+	max-width: 33.33%;
+}
+.feature div{
+	
+padding: 45px 25px;
+	
+border-radius: 10px;
+	
+box-shadow: 12px 18px 20px #e408082e;
+}
+.feature h2{
+	font-size: 22px;
+	margin: 0;
+}
+.feature p{
+	margin: 0;
+	font-size: 17px;
+	padding-top: 12px;
+	width: 300px;
+}
+.color1{
+	background-color: #caffc5;
+}
+.color2{
+	background-color: #ff9a9a;
+}
+.color3{
+	background-color: #f4fa90;
+}
+
+.aboutme-section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.aboutme{
+	flex-basis: 60%;
+	padding: 30px;
+}
+
+.aboutme h2{
+	margin: 0;
+	font-size: 50px;
+}
+.aboutme p{
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+	line-height: 1.4;
+}
+.aboutme span{
+	color: #ffa600;
+}
+
+.mypicture{
+	flex-basis: 40%;
+	padding: 30px;
+}
+.mypicture img{
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 9px 20px 30px 0px #14141452;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.aboutme-page .container{
+	justify-content: center;
+}
+.aboutme-page .aboutme{
+	flex-basis: 70%;
+	max-width: 70%;
+	padding: 30%;
+}
+.aboutme-page .mypicture{
+	flex-basis: 50%;
+	max-width: 50%;
+	padding: 30%;
+}
+
+.video-section{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom:80px;
+	background: #ffff00;
+	background: linear-gradient(90deg, #fe0000 18%, rgb(21, 5, 248) 73%);
+}
+iframe{
+	border-radius: 6px;
+	max-width: 700px;
+	margin: auto;
+}
+
+
+
+.gallery-section{
+	padding: 100px 30px;
+}
+.gallery-section .flex{
+	flex-wrap: wrap;
+}
+.gallery{
+	flex-basis: 25%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.gallery img{
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+	display: block;
+	border-radius: 5px;
+}
+
+footer{
+	background-color: rgb(6, 201, 255);
+	padding: 100px 0;
+}
+.f_column{
+	flex-basis: 33.33%;
+	max-width: 33.33%;
+}
+
+.f_column h4{
+	color: white;
+	font-size: 22px;
+	margin: 0;
+}
+.f_column ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.f_column a{
+	color: rgb(0, 112, 232);
+	display: block;
+	padding: 5px 0;
+	text-decoration: none;
+}
+
+
+
+.contact-section{
+	padding: 80px 0;
+	background: rgb(213, 213, 255);
+}
+
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+}
+.contact-form h1{
+	font-size: 50px;
+	text-align: center;
+	font-weight: 900;
+}
+form{}
+
+.input{
+	margin-bottom: 15px;
+}
+.input strong{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 7px;
+}
+.input input{
+	width: 100%;
+	border: 2px solid rgb(1, 254, 5);
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-size: 18px;
+}
+.input textarea{
+	width: 100%;
+	border: 2px solid rgb(254, 0, 0);
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+
+.gender{
+	margin-bottom: 15px;
+}
+.gender strong{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.gender input{width: 25px; height: 25px;}
+.gender label{
+	font-size: 20px;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+
+.subject{
+	margin-bottom: 15px;
+}
+.subject strong{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.subject input{
+	width: 25px;
+	height: 25px;
+}
+.subject label{
+	font-size: 20px;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+
+.submit{}
+.submit input{
+	padding: 13px 45px;
+	font-size: 30px;
+	border: 2px solid rgb(255, 217, 0);
+	border-radius: 4px;
+	background-color: rgb(11, 235, 213);
+	color: white;
+}
